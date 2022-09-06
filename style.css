@@ -17,7 +17,13 @@ body{
 }
 
 .str{
-
+    display: flex;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.str_social-row{
+    display:flex;
+    padding-right:10px;
 }
 .str__left-column{
     width: 50%;
@@ -33,14 +39,6 @@ body{
     display: flex;
     padding-bottom: 120px;
     background-color: white;
-}
-.header__left-column{
-    width: 50%;
-    position: relative;
-}
-.header__right-column{
-    width: 50%;
-    position: relative;
 }
 .header__first-circle{
     width: 23%;
@@ -105,14 +103,6 @@ body{
 .exam{
     display: flex;
     margin-bottom: 120px;
-}
-.exam__left-column{
-    width: 50%;
-    position: relative;
-}
-.exam__right-column{
-    width: 50%;
-    position: relative;
 }
 .exam h1 {
     font-weight: 700;
@@ -188,10 +178,7 @@ body{
     width: 75px;
 }
 
-.str{
-    display: flex;
-    margin-bottom: 50px;
-}
+
 .test h1, .course h1{
     font-weight: 700;
     font-size: 43px;
@@ -727,9 +714,34 @@ footer .str{
 }
 
 @media(max-width:768px){
+    .str {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .str_social-row{
+        flex-direction: row;
+    }
+    .str__left-column{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .str__right-column{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
     .header{
         flex-direction: column-reverse;
         padding-bottom: 50px;
+    }
+    .header .str__right-column{
+        min-height: 300px;
+        order: -1;
     }
     .header__first-circle-mobile{
         display: block;
@@ -871,11 +883,6 @@ footer .str{
         margin-left: 8%;
         margin-top: 35px;
     }
-    .str {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 10px;
-    }
     .test__left-column {
         width: 100%;
     }
@@ -1011,6 +1018,9 @@ footer .str{
 }
 
 @media(max-width:425px){
+    .str_social-row{
+        flex-direction: column;
+    }
     .header ul {
         margin-left: 2%;
     }
@@ -1051,6 +1061,7 @@ footer .str{
 
     .course__link{
         align-self: center;
+        margin-bottom: 15px;
     }
 
     .container{
