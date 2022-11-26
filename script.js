@@ -4,6 +4,7 @@ const point3 = document.querySelector(".point3");
 const point4 = document.querySelector(".point4");
 const point5 = document.querySelector(".point5");
 const point6 = document.querySelector(".point6");
+const point7 = document.querySelector(".point7");
 const card = document.querySelector("#porfile-mob");
 const points = document.querySelector(".profiles__points");
 const sliders = document.querySelector(".slider__items");
