@@ -46,6 +46,10 @@ body{
     left: 0;
     top: 0;
 }
+.header__social{
+    padding-left: 19%;
+    margin-top: -30px;
+}
 .header__directon-title{
     margin-left: 21%;
 }
@@ -428,8 +432,8 @@ body{
     margin-top: 2%;
 }
 .footer__img{
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
 }
 footer .str{
     padding-left: 8%;
@@ -723,6 +727,10 @@ footer .str{
     }
     .str_social-row{
         flex-direction: row;
+    }
+    .header__social{
+        flex-direction: row;
+        padding-left: 6%;
     }
     .str__left-column{
         width: 100%;
